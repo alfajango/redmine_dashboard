@@ -10,12 +10,12 @@ group :development do
 end
 
 group :test do
-  gem 'rspec', '~> 2.0'
-  gem 'rspec-rails'
-  gem 'poltergeist'
-  gem 'database_cleaner'
-  gem 'fuubar'
+  #gem 'rspec', '~> 2.0'
+  #gem 'rspec-rails'
+  #gem 'poltergeist'
+  #gem 'database_cleaner'
+  #gem 'fuubar'
 
-  # for redmine on travis CI
-  gem 'test-unit'
+  ## for redmine on travis CI
+  #gem 'test-unit'
 end

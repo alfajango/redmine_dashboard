@@ -5,6 +5,8 @@ module Rdb
     belongs_to :context, polymorphic: true
     belongs_to :dashboard, class_name: 'Rdb::Dashboard'
 
+    attr_accessible :context, :dashboard
+
     def issues
       context.issues
     end

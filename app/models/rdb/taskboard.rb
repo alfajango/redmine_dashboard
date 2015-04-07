@@ -1,6 +1,7 @@
 module Rdb
   class Taskboard < Dashboard
     has_many :columns, class_name: 'Rdb::Column', foreign_key: 'dashboard_id'
+    attr_accessible :name
 
     after_create do
       IssueStatus.rdb_open.each do |status|

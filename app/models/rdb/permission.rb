@@ -5,6 +5,8 @@ module Rdb
     belongs_to :dashboard, class_name: 'Rdb::Dashboard'
     belongs_to :principal, polymorphic: true
 
+    attr_accessible :dashboard, :principal, :role, :dashboard_id
+
     module Roles
       READ = 'read'.freeze
       EDIT = 'edit'.freeze

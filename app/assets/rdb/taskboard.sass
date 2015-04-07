@@ -1,44 +1,21 @@
 .rdb-taskboard
-  header.rdb-taskboard-header
-    padding: 5px
+  width: 100%
+  display: table
+  table-layout: fixed
+  border-spacing: 4px
 
-    > section
-      float: left
-      &.options
-        float: right
+  .rdb-column
+    display: table-cell
+    background-color: #fafafa
+    padding: 0 0 .5em 0
 
-    hr
-      clear: both
-      border: none
+    > h3
+      margin: 0 0 .5em 0
+      padding: 2px 6px 4px
+      background: #fff
+      border-bottom: 3px solid $frame-color
 
-    .rdb-board-menu > a
-      font-size: 1.4em
-      font-weight: bold
-
-  section.rdb-taskboard-body
-    padding: 5px
-
-    .rdb-column-header
-      margin-bottom: 2px
-
-      h3
-        font-weight: normal
-        border-bottom: 2px solid $frame-color
-        padding: .3em .4em .2em
-        margin: 0
-
-    .rdb-column-group
-      display: table
-      table-layout: fixed
-      width: 100%
-      overflow: hidden
-
-      .rdb-column
-        display: table-cell
-        vertical-align: top
-        padding: 0 .4em
-
-        &:first-child
-          padding-left: 0
-        &:last-child
-          padding-right: 0
+    > ul
+      list-style: none
+      padding: 0
+      margin: 0

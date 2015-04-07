@@ -6,6 +6,8 @@ module Rdb
     belongs_to :dashboard, class_name: 'Rdb::Dashboard'
     validates :dashboard, :name, presence: true
 
+    attr_accessible :dashboard, :name, :statuses
+
     after_initialize do
       self.opts = {} unless opts.is_a?(Hash)
     end

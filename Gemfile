@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'haml'
 
 group :development do
-  gem 'guard-rspec'
+  #gem 'guard-rspec'
   gem 'transifex-ruby-fork-jg', require: false
   gem 'inifile', require: false
 end
